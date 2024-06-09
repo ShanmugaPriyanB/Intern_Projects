@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="CodeHim">
+      <title>Sign up success message</title>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+     
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+
+      <style>
+         .cd__main {
+            position: relative;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            min-height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+         }
+
+         #card {
+            width: 320px;
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            background: #fff;
+         }
+
+         #upper-side {
+            padding: 2em;
+            background: linear-gradient(135deg, #71b280, #134e5e);
+            color: #fff;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+         }
+        
+         #checkmark {
+            font-weight: lighter;
+            fill: #fff;
+            margin: -3.5em auto auto 20px;
+         }
+
+         #status {
+            font-weight: lighter;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.5em;
+            margin-top: -.2em;
+            margin-bottom: 0;
+         }
+
+         #lower-side {
+            padding: 2em 2em 3em 2em;
+            background: #fff;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+         }
+
+         #message {
+            margin-top: -.5em;
+            color: #757575;
+            letter-spacing: 1px;
+            font-size: 1.1em;
+         }
+
+         @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+         @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+         body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 15px;
+            background: #eee;
+            margin: 0;
+         }
+
+         .cd__intro {
+            padding: 20px 30px;
+           
+            flex-direction: column;
+            background: #fff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: center;
+            border-bottom: 4px solid #2c3e50;
+         }
+
+         .cd__intro,
+         .cd__credit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            line-height: .8;
+         }
+
+         .cd__intro h1 {
+            font-size: 24pt;
+            padding-bottom: 15px;
+            background: -webkit-linear-gradient(#2c3e50, #4ca1af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin: 0;
+            background-clip: text;
+         }
+
+         .cd__intro p {
+            font-size: 14px;
+            margin: 0;
+         }
+
+         .cd__credit {
+            padding: 12px;
+            font-size: 9pt;
+            margin-top: 40px;
+            text-align: center;
+            width: 100%;
+         }
+
+         .cd__credit span:before {
+            font-family: FontAwesome;
+            color: #e41b17;
+            content: "\f004";
+         }
+
+         .cd__credit a {
+            color: #333;
+            text-decoration: none;
+         }
+
+         .cd__credit a:hover {
+            color: #1DBF73;
+         }
+
+         .cd__credit a:hover:after {
+            font-family: FontAwesome;
+            content: "\f08e";
+            font-size: 9pt;
+            position: absolute;
+            margin: 3px;
+         }
+
+         @media only screen and (min-width: 1360px) {
+            .cd__main {
+               
+               margin-left: auto;
+               margin-right: auto;
+               padding: 24px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <header class="cd__intro">
+         <h1>Sign up Status</h1>
+      </header>
+
+      <main class="cd__main">
+         <div id='card' class="animated fadeIn">
+            <div id='upper-side'>
+               <h3 id='status'>
+                  Success
+               </h3>
+            </div>
+            <div id='lower-side'>
+               <p id='message'>
+                   Congratulations, account created successfully!
+               </p>
+            </div>
+         </div>
+      </main>
+      <footer class="cd__credit"> &copy; 2024 ShanmugaPriyan</footer>
+      <!-- Script JS -->
+      <script src="./js/script.js"></script>
+      <!--$%analytics%$-->
+   </body>
+</html>
