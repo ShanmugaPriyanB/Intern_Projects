@@ -1,0 +1,26 @@
+<% layout('layout/main') -%>
+<% block('title', 'Home') -%>
+
+<div class="container mt-4 text-center home__container">
+  <h1 class="blog-heading">Welcome to our blog site!</h1>
+  <h4 class="blog-sub-heading text-muted">Here we present a selection of our finest blogs</h4>
+  <a class="btn btn-primary btn-lg mt-4 mx-auto home__write-btn" href="/compose">Write your blog</a>
+</div>
+
+<div class="container home__container-post" >
+  <h1 class="text-center" >Most Recent Blogs</h1>
+  <div class="row mr-5">
+    <%  posts.forEach(function(post){ %>
+      <!-- <h1><%=post.title%></h1>
+      <p><%=post.content%></p> -->
+
+      <div class="card col-3 offset-1 mt-5 " id="cards">
+        <div class="card-body home__card">
+          <h5 class="card-title"><%=post.title%></h5>
+          <p class="card-text"><%=post.content%></p>
+          <a href="/posts/<%=post._id%>" class="btn btn-primary home__post-btn">Read more</a>
+        </div>
+      </div>
+      <% }) %>
+  </div>
+</div>
